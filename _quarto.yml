@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "[Student xxxx]'s Analytics Lab"
+  title: "Bora's Analytics Lab"
   navbar:
     search: true
     left:
@@ -22,11 +22,12 @@ website:
             
     tools:
       - icon: github
-        href: https://twitter.com
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/akifboraeren
       - icon: linkedin
-        href: https://linkedin.com
+        href: https://linkedin.com/akifboraeren
+      - icon: steam
+        href: https://steamcommunity.com/profiles/76561198152536340/
+      
 
   sidebar:
     - title: "Assignments"
@@ -46,8 +47,8 @@ format:
     toc: true
     toc-location: left
     theme: 
-      light: simplex 
-      dark: cyborg
+      light: [cosmo, \Programming\R Projects\emu660-spring2026-emu660-spring2026-emu660-quarto-template\themes\theme_light.scss]
+      dark: [cosmo, \Programming\R Projects\emu660-spring2026-emu660-spring2026-emu660-quarto-template\themes\theme_dark.scss]
     css: styles.css
 
 

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Welcome to My Analytics Lab",
     "section": "",
-    "text": "Hello!! My name is xxx xxxx.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\n\n\n\n Back to top"
+    "text": "Hello!! My name is Bora.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\n\n\n\n Back to top"
   },
   {
     "objectID": "project.html",
@@ -74,10 +74,7 @@
     "href": "assignments.html",
     "title": "My Assignments",
     "section": "",
-    "text": "On this page, I showcase the assignment I conducted for the [term and year, e.g. Spring 2024-2025] EMU660 Decision Making with Analytics course.\nPlease use left menu to navigate through my assignments.\n\n\n\n Back to top",
-    "crumbs": [
-      "My Assignments"
-    ]
+    "text": "On this page, I showcase the assignment I conducted for the [term and year, e.g. Spring 2024-2025] EMU660 Decision Making with Analytics course.\nPlease use left menu to navigate through my assignments.\n\n\n\n Back to top"
   },
   {
     "objectID": "about.html#employements",
@@ -91,7 +88,7 @@
     "href": "about.html#internships",
     "title": "About Me",
     "section": "Internships",
-    "text": "Internships\n\nFirm aaa, position xx, year xxx\nFirm bbb, position yyy, year yyy"
+    "text": "Internships\n\nOYAK Renault Otomobil Fabrikaları A.Ş. Bursa, Türkiye Jul 2025 – Aug 2025\n2025 Production & Process Intern\nOdelo Otomotiv Aydınlatma A.Ş.  Bursa,Türkiye Jul 2023 – Aug 2023\nProcess Engineering Intern"
   },
   {
     "objectID": "posts.html",
@@ -112,10 +109,7 @@
     "href": "assignments/assignment-1.html",
     "title": "Assignment 1",
     "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts.",
-    "crumbs": [
-      "Assignment 1"
-    ]
+    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts."
   },
   {
     "objectID": "assignments/assignment-2.html",
@@ -126,5 +120,12 @@
     "crumbs": [
       "Assignment 2"
     ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Check my resume in pdf format! My CV"
   }
 ]

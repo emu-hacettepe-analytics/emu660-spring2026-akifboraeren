@@ -2,39 +2,37 @@
 title: "About Me"
 sidebar: false 
 ---
+::: {style="text-align: right;"}
+Check my resume in pdf format!   [My CV](files/cv.pdf){.btn style="background-color: #1B9679; border-color: #1B9679; color: white;" target="_blank" role="button"}
+:::
 
-![](assets/images/vesikalik.jpeg){fig-align="center"}
+![](images/WhatsApp%20Image%202026-03-09%20at%2001.43.22.jpeg){fig-align="center" width="200"}
 
 # Education
 
--   B.S., ................................., ....................................University, Turkey, 20xx - 20xx.
--   M.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
--   Ph.D.., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+-   B.S., Hacettepe University, Turkey, 2020 - 2025.
+-   M.S., Industrial Engineering, Hacettepe University, Turkey, 2025 - ongoing.
 
 # Work Experience
 
-## Employements
-
-1.  Firm xxx, position xx, year xxx
-
-2.  Firm yyy, position yyy, year yyy
-
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
+1.  **OYAK Renault Otomobil Fabrikaları A.Ş.** Bursa, Türkiye Jul 2025 -- Aug 2025\
+    2025 *Production & Process Intern*
 
-2.  Firm bbb, position yyy, year yyy
+2.  **Odelo Otomotiv Aydınlatma A.Ş.**  Bursa,Türkiye Jul 2023 -- Aug 2023\
+    *Process Engineering Intern*
 
 # Projects
 
-1.  TUBİTAK 1001..........................
-
-# Publications
-
-1.  Dasdemir, E., Batta, R., Koksalan, M., Tezcaner Ozturk, D. (2022) “UAV Routing for Reconnaissance Mission: A Multi-Objective Orienteering Problem with Time-Dependent Prizes and Multiple Connections”, Computers & Operations Research, 145: 105882.
+1.  **Generative AI Platform for Inventive Problem Solving (Graduation Project)**\
+    Oct *2024 -- June 2025\
+    TUSAŞ (TAI)*
 
 # Competencies
 
-R, Quarto, Git, Python
+R, Quarto, Git, Python, PlayStation 2 softmodding
 
 # Hobbies
+
+Skiing, Chess, Football, Videogames
