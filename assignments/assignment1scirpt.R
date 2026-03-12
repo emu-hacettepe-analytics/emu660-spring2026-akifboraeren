@@ -1,21 +1,9 @@
----
-title: "Assignment 1"
----
-
-# Assignment 1
-
-My first assignment has two parts.
-
-## Task 3
-
-### (c)
-
-```{r}
 install.packages("dslabs")
 library(dslabs)
-```
 
-```{r}
+
+#C
+
 data(mtcars)
 print(mtcars)
 
@@ -37,38 +25,30 @@ compute_stats <- function(num_vector){
 #instead of c(), we can use list() but it is harder for apply function to make it a matrix.
 
 compute_stats(mpg)
-```
 
-```{r}
 for (i in names(mtcars)){
   print(i)
   cat("\n")
   print(compute_stats(mtcars[[i]]))
   cat("\n")
 }
-```
 
-```{r}
 results1 <- sapply(mtcars, compute_stats)
 
 print(results1)
-```
 
-```{r}
 results2 <- apply(mtcars, 2, compute_stats)
 
 print(results2)
-```
 
-### (d)
 
-```{r}
+
+#D
+
 data(polls_us_election_2016)
 head(polls_us_election_2016)
 str(polls_us_election_2016)
-```
 
-```{r}
 my_first <- "Akif Bora"
 my_birth_year <- 2001
 
@@ -79,13 +59,11 @@ if (k%%2 ==0) {
 } else{
   trimmed_data <- tail(polls_us_election_2016, k)
 }
-```
 
-```{r}
 #number of na values in the entire dataset
 sum(is.na(polls_us_election_2016))
 
-#replacing the na values
+#replacinfg the na values
 
 for (i in names(trimmed_data)) {
   column <- trimmed_data[[i]]
@@ -103,7 +81,4 @@ for (i in names(trimmed_data)) {
   }
   trimmed_data[[i]] <- column
 }
-print(trimmed_data)
-```
 
-## 

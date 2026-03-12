@@ -2,32 +2,36 @@
 title: "About Me"
 sidebar: false 
 ---
+
 ::: {style="text-align: right;"}
-Check my resume in pdf format!   [My CV](files/cv.pdf){.btn style="background-color: #1B9679; border-color: #1B9679; color: white;" target="_blank" role="button"}
+Check my resume in pdf format! [My CV](files/akifboraerencv.pdf){.btn style="background-color: #1B9679; border-color: #1B9679; color: white;" target="_blank" role="button"}
 :::
 
 ![](images/WhatsApp%20Image%202026-03-09%20at%2001.43.22.jpeg){fig-align="center" width="200"}
 
 # Education
 
--   B.S., Hacettepe University, Turkey, 2020 - 2025.
--   M.S., Industrial Engineering, Hacettepe University, Turkey, 2025 - ongoing.
+-   **M.S., Industrial Engineering, Hacettepe University,** Ankara, Türkiye, 2025 - ongoing.
+
+-   **B.S., Industrial Engineering, Hacettepe University,** Ankara, Türkiye, 2020 - 2025
 
 # Work Experience
 
 ## Internships
 
-1.  **OYAK Renault Otomobil Fabrikaları A.Ş.** Bursa, Türkiye Jul 2025 -- Aug 2025\
-    2025 *Production & Process Intern*
+-   **OYAK Renault Otomobil Fabrikaları A.Ş.** Bursa, Türkiye Jul 2025 -- Aug 2025\
+    *Production & Process Intern*
 
-2.  **Odelo Otomotiv Aydınlatma A.Ş.**  Bursa,Türkiye Jul 2023 -- Aug 2023\
+-   **Odelo Otomotiv Aydınlatma A.Ş.**  Bursa,Türkiye Jul 2023 -- Aug 2023\
     *Process Engineering Intern*
 
 # Projects
 
-1.  **Generative AI Platform for Inventive Problem Solving (Graduation Project)**\
-    Oct *2024 -- June 2025\
+-   **Generative AI Platform for Inventive Problem Solving (Graduation Project)** Oct *2024 -- June 2025\
     TUSAŞ (TAI)*
+
+-   **Mobile Market Share Analysis** **(EMU430 Data Analytics Project)** Nov 2023 -- Jan 2024\
+    Team Ctrl_S
 
 # Competencies
 
