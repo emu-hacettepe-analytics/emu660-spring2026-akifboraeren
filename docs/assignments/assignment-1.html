@@ -205,12 +205,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#assignment-1" id="toc-assignment-1" class="nav-link active" data-scroll-target="#assignment-1">Assignment 1</a>
+  <li><a href="#task-3" id="toc-task-3" class="nav-link active" data-scroll-target="#task-3">Task 3</a>
   <ul class="collapse">
   <li><a href="#a" id="toc-a" class="nav-link" data-scroll-target="#a">(a)</a></li>
   <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b">(b)</a></li>
   <li><a href="#c" id="toc-c" class="nav-link" data-scroll-target="#c">(c)</a></li>
+  <li><a href="#d" id="toc-d" class="nav-link" data-scroll-target="#d">(d)</a></li>
   </ul></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul>
 </nav>
 </nav>
@@ -238,26 +240,354 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="assignment-1" class="level1">
-<h1>Assignment 1</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
+<div style="text-align: left;">
+<p><a href="assignments/emu660-assignment-1-2026spring.pdf" class="btn" style="background-color: #1B9679; border-color: #1B9679; color: white;" target="_blank" role="button">Assignment 1</a></p>
 </div>
 <p>My first assignment has two parts.</p>
-<section id="a" class="level2">
-<h2 class="anchored" data-anchor-id="a">(a)</h2>
+<section id="task-3" class="level2">
+<h2 class="anchored" data-anchor-id="task-3">Task 3</h2>
+<section id="a" class="level3">
+<h3 class="anchored" data-anchor-id="a">(a)</h3>
+<p>video: <a href="https://www.youtube.com/watch?v=Fi8-phj1X1A&amp;t" class="uri">https://www.youtube.com/watch?v=Fi8-phj1X1A&amp;t</a></p>
+<p>Dr.&nbsp;Cem Vardar explains the relationship between data science and industrial engineering. He defines industrial engineering as a job that solves complex problems with science and mathematics. His approach to solve complex problems and optimizing the efficiency of a system is “don’t touch if it works” principle. This principle solves the issues step by step, improving each time. According to Dr.&nbsp;Cem Vardar, this approach is way more succesful than creating a new complex tool for each problem. Dr.&nbsp;Cem categorizes the demand for people which deals with data:</p>
+<ul>
+<li><p>General Data Scientist/Analyst</p></li>
+<li><p>Predictive Modelling</p></li>
+<li><p>Machine Learning</p></li>
+<li><p>OR Data Scientist</p></li>
+</ul>
+<p>Dr.&nbsp;Cem Vardar also recommends that social and analytical skills are crucial for an engineer. In his speech, it is stated that these soft skills are as important as technical skills and it is always a plus for an engineer to utilize various skillsets.</p>
 </section>
-<section id="b" class="level2">
-<h2 class="anchored" data-anchor-id="b">(b)</h2>
+<section id="b" class="level3">
+<h3 class="anchored" data-anchor-id="b">(b)</h3>
+<p>Q1) In his presentation, Dr.&nbsp;Cem Vardar mentions evolutionary design and the “if it works, don’t touch it” principle when dealing with complex systems. If an engineer wants to improve a system that has problems but is still running (like a logistics network getting customer complaints), how should they approach it according to Dr.&nbsp;Cem Vardar? Also, what are the main risks of throwing everything and starting from scratch?</p>
+<p>Answer: According to Dr.&nbsp;Cem Vardar, an engineer should avoid throwing away a working system just to try and build a “perfect” one from zero. Even if the system has issues, it is still functioning. Instead, problem should be broken into small manageable parts and be solved spep by step using evolutionary approach. Main points should be identified and small modest improvements should be made in each step.</p>
+<p>Q2) When we consider Dr.&nbsp;Cem Vardar’s analytical thinking methods, which is the best approacg for an industrial engineer with small amount of data?</p>
+<ol type="a">
+<li><p>Complex mathematical models and machine learning algorithms should be integrated to the system without thinking about small data.</p></li>
+<li><p>Purchasing only high budget automation systems instead of using statistical models to fill gaps in databases.</p></li>
+<li><p>Using logic and simple tools (like averages) that fit the problem better.</p></li>
+<li><p>Doing nothing for years because you think you don’t have enough data to solve the problem.</p></li>
+<li><p>Mixing random data from different departments just to make your data look bigger.</p></li>
+</ol>
+<p>Anser: C</p>
 </section>
-<section id="c" class="level2">
-<h2 class="anchored" data-anchor-id="c">(c)</h2>
+<section id="c" class="level3">
+<h3 class="anchored" data-anchor-id="c">(c)</h3>
+<p>Package “dslabs” is installed.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("dslabs")</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Data “mtcars” is installed and checked with print function. mpg column of the dataset is now mpg object which is a vector of its own. compute stats function is defined and it finds the demanded values of the mpg.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(mtcars)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(mtcars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+Datsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+Merc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+Merc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4
+Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3
+Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3
+Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3
+Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4
+Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4
+Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4
+Fiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1
+Honda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2
+Toyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1
+Toyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1
+Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2
+AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
+Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4
+Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2
+Fiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1
+Porsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2
+Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2
+Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
+Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
+Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>mpg <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>mpg</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>compute_stats <span class="ot">&lt;-</span> <span class="cf">function</span>(num_vector){</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  statslist <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">mean =</span> <span class="fu">mean</span>(num_vector),</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">median =</span> <span class="fu">median</span>(num_vector),</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">variance =</span> <span class="fu">var</span>(num_vector),</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">iqr =</span> <span class="fu">IQR</span>(num_vector),</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">minimum =</span> <span class="fu">min</span>(num_vector),</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">maximum =</span> <span class="fu">max</span>(num_vector)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(statslist)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co">#instead of c(), we can use list() but it is harder for apply function to make it a matrix.</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="fu">compute_stats</span>(mpg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    mean   median variance      iqr  minimum  maximum 
+20.09062 19.20000 36.32410  7.37500 10.40000 33.90000 </code></pre>
+</div>
+</div>
+<p>using for loop with compute_stats to find the values for all of the columns in mtcars dataset.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">names</span>(mtcars)){</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(i)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">compute_stats</span>(mtcars[[i]]))</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "mpg"
+
+    mean   median variance      iqr  minimum  maximum 
+20.09062 19.20000 36.32410  7.37500 10.40000 33.90000 
+
+[1] "cyl"
+
+    mean   median variance      iqr  minimum  maximum 
+6.187500 6.000000 3.189516 4.000000 4.000000 8.000000 
+
+[1] "disp"
+
+      mean     median   variance        iqr    minimum    maximum 
+  230.7219   196.3000 15360.7998   205.1750    71.1000   472.0000 
+
+[1] "hp"
+
+     mean    median  variance       iqr   minimum   maximum 
+ 146.6875  123.0000 4700.8669   83.5000   52.0000  335.0000 
+
+[1] "drat"
+
+     mean    median  variance       iqr   minimum   maximum 
+3.5965625 3.6950000 0.2858814 0.8400000 2.7600000 4.9300000 
+
+[1] "wt"
+
+    mean   median variance      iqr  minimum  maximum 
+3.217250 3.325000 0.957379 1.028750 1.513000 5.424000 
+
+[1] "qsec"
+
+     mean    median  variance       iqr   minimum   maximum 
+17.848750 17.710000  3.193166  2.007500 14.500000 22.900000 
+
+[1] "vs"
+
+     mean    median  variance       iqr   minimum   maximum 
+0.4375000 0.0000000 0.2540323 1.0000000 0.0000000 1.0000000 
+
+[1] "am"
+
+     mean    median  variance       iqr   minimum   maximum 
+0.4062500 0.0000000 0.2489919 1.0000000 0.0000000 1.0000000 
+
+[1] "gear"
+
+     mean    median  variance       iqr   minimum   maximum 
+3.6875000 4.0000000 0.5443548 1.0000000 3.0000000 5.0000000 
+
+[1] "carb"
+
+    mean   median variance      iqr  minimum  maximum 
+2.812500 2.000000 2.608871 2.000000 1.000000 8.000000 </code></pre>
+</div>
+</div>
+<p>Applying the same logic above but with “sapply” and “apply”.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>results1 <span class="ot">&lt;-</span> <span class="fu">sapply</span>(mtcars, compute_stats)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(results1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              mpg      cyl       disp        hp      drat       wt      qsec
+mean     20.09062 6.187500   230.7219  146.6875 3.5965625 3.217250 17.848750
+median   19.20000 6.000000   196.3000  123.0000 3.6950000 3.325000 17.710000
+variance 36.32410 3.189516 15360.7998 4700.8669 0.2858814 0.957379  3.193166
+iqr       7.37500 4.000000   205.1750   83.5000 0.8400000 1.028750  2.007500
+minimum  10.40000 4.000000    71.1000   52.0000 2.7600000 1.513000 14.500000
+maximum  33.90000 8.000000   472.0000  335.0000 4.9300000 5.424000 22.900000
+                vs        am      gear     carb
+mean     0.4375000 0.4062500 3.6875000 2.812500
+median   0.0000000 0.0000000 4.0000000 2.000000
+variance 0.2540323 0.2489919 0.5443548 2.608871
+iqr      1.0000000 1.0000000 1.0000000 2.000000
+minimum  0.0000000 0.0000000 3.0000000 1.000000
+maximum  1.0000000 1.0000000 5.0000000 8.000000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>results2 <span class="ot">&lt;-</span> <span class="fu">apply</span>(mtcars, <span class="dv">2</span>, compute_stats)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(results2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              mpg      cyl       disp        hp      drat       wt      qsec
+mean     20.09062 6.187500   230.7219  146.6875 3.5965625 3.217250 17.848750
+median   19.20000 6.000000   196.3000  123.0000 3.6950000 3.325000 17.710000
+variance 36.32410 3.189516 15360.7998 4700.8669 0.2858814 0.957379  3.193166
+iqr       7.37500 4.000000   205.1750   83.5000 0.8400000 1.028750  2.007500
+minimum  10.40000 4.000000    71.1000   52.0000 2.7600000 1.513000 14.500000
+maximum  33.90000 8.000000   472.0000  335.0000 4.9300000 5.424000 22.900000
+                vs        am      gear     carb
+mean     0.4375000 0.4062500 3.6875000 2.812500
+median   0.0000000 0.0000000 4.0000000 2.000000
+variance 0.2540323 0.2489919 0.5443548 2.608871
+iqr      1.0000000 1.0000000 1.0000000 2.000000
+minimum  0.0000000 0.0000000 3.0000000 1.000000
+maximum  1.0000000 1.0000000 5.0000000 8.000000</code></pre>
+</div>
+</div>
+</section>
+<section id="d" class="level3">
+<h3 class="anchored" data-anchor-id="d">(d)</h3>
+<p>Dalling the data “polls_us_election_2026”.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(polls_us_election_2016)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(polls_us_election_2016)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  state  startdate    enddate
+1  U.S. 2016-11-03 2016-11-06
+2  U.S. 2016-11-01 2016-11-07
+3  U.S. 2016-11-02 2016-11-06
+4  U.S. 2016-11-04 2016-11-07
+5  U.S. 2016-11-03 2016-11-06
+6  U.S. 2016-11-03 2016-11-06
+                                                    pollster grade samplesize
+1                                   ABC News/Washington Post    A+       2220
+2                                    Google Consumer Surveys     B      26574
+3                                                      Ipsos    A-       2195
+4                                                     YouGov     B       3677
+5                                           Gravis Marketing    B-      16639
+6 Fox News/Anderson Robbins Research/Shaw &amp; Company Research     A       1295
+  population rawpoll_clinton rawpoll_trump rawpoll_johnson rawpoll_mcmullin
+1         lv           47.00         43.00            4.00               NA
+2         lv           38.03         35.69            5.46               NA
+3         lv           42.00         39.00            6.00               NA
+4         lv           45.00         41.00            5.00               NA
+5         rv           47.00         43.00            3.00               NA
+6         lv           48.00         44.00            3.00               NA
+  adjpoll_clinton adjpoll_trump adjpoll_johnson adjpoll_mcmullin
+1        45.20163      41.72430        4.626221               NA
+2        43.34557      41.21439        5.175792               NA
+3        42.02638      38.81620        6.844734               NA
+4        45.65676      40.92004        6.069454               NA
+5        46.84089      42.33184        3.726098               NA
+6        49.02208      43.95631        3.057876               NA</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(polls_us_election_2016)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   4208 obs. of  15 variables:
+ $ state           : Factor w/ 57 levels "Alabama","Alaska",..: 50 50 50 50 50 50 50 50 37 50 ...
+ $ startdate       : Date, format: "2016-11-03" "2016-11-01" ...
+ $ enddate         : Date, format: "2016-11-06" "2016-11-07" ...
+ $ pollster        : Factor w/ 196 levels "ABC News/Washington Post",..: 1 63 81 194 65 55 18 113 195 76 ...
+ $ grade           : Factor w/ 10 levels "D","C-","C","C+",..: 10 6 8 6 5 9 8 8 NA 8 ...
+ $ samplesize      : int  2220 26574 2195 3677 16639 1295 1426 1282 8439 1107 ...
+ $ population      : chr  "lv" "lv" "lv" "lv" ...
+ $ rawpoll_clinton : num  47 38 42 45 47 ...
+ $ rawpoll_trump   : num  43 35.7 39 41 43 ...
+ $ rawpoll_johnson : num  4 5.46 6 5 3 3 5 6 6 7.1 ...
+ $ rawpoll_mcmullin: num  NA NA NA NA NA NA NA NA NA NA ...
+ $ adjpoll_clinton : num  45.2 43.3 42 45.7 46.8 ...
+ $ adjpoll_trump   : num  41.7 41.2 38.8 40.9 42.3 ...
+ $ adjpoll_johnson : num  4.63 5.18 6.84 6.07 3.73 ...
+ $ adjpoll_mcmullin: num  NA NA NA NA NA NA NA NA NA NA ...</code></pre>
+</div>
+</div>
+<p>my_first and my_birth_year is defined and also k value is found. Dataset is trimmed according to k being odd or even.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>my_first <span class="ot">&lt;-</span> <span class="st">"Akif Bora"</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>my_birth_year <span class="ot">&lt;-</span> <span class="dv">2001</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>k <span class="ot">&lt;-</span> (<span class="fu">nchar</span>(my_first) <span class="sc">+</span> my_birth_year) <span class="sc">%%</span> <span class="dv">15</span> <span class="sc">+</span> <span class="dv">8</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (k<span class="sc">%%</span><span class="dv">2</span> <span class="sc">==</span><span class="dv">0</span>) {</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>  trimmed_data <span class="ot">&lt;-</span> <span class="fu">head</span>(polls_us_election_2016, k)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span>{</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  trimmed_data <span class="ot">&lt;-</span> <span class="fu">tail</span>(polls_us_election_2016, k)</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Replacing NA values in the trimmed_data with the demanded element in the task.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#number of na values in the entire dataset</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(polls_us_election_2016))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 11604</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#replacing the na values</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">names</span>(trimmed_data)) {</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  column <span class="ot">&lt;-</span> trimmed_data[[i]]</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.numeric</span>(column)) {</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>    column[<span class="fu">is.na</span>(column)] <span class="ot">&lt;-</span> my_birth_year <span class="sc">+</span> k</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  } </span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">is.character</span>(column) <span class="sc">||</span> <span class="fu">is.factor</span>(column)) {</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>    column <span class="ot">&lt;-</span> <span class="fu">as.character</span>(column)</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    column[<span class="fu">is.na</span>(column)] <span class="ot">&lt;-</span> <span class="fu">paste0</span>(my_first, <span class="st">"_"</span>, k)</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">is.factor</span>(column) <span class="sc">||</span> <span class="fu">is.factor</span>(column)) {</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>    column <span class="ot">&lt;-</span> <span class="fu">as.character</span>(column)</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>  trimmed_data[[i]] <span class="ot">&lt;-</span> column</span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(trimmed_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  state  startdate    enddate
+1  U.S. 2016-11-03 2016-11-06
+2  U.S. 2016-11-01 2016-11-07
+3  U.S. 2016-11-02 2016-11-06
+4  U.S. 2016-11-04 2016-11-07
+5  U.S. 2016-11-03 2016-11-06
+6  U.S. 2016-11-03 2016-11-06
+7  U.S. 2016-11-02 2016-11-06
+8  U.S. 2016-11-03 2016-11-05
+                                                    pollster grade samplesize
+1                                   ABC News/Washington Post    A+       2220
+2                                    Google Consumer Surveys     B      26574
+3                                                      Ipsos    A-       2195
+4                                                     YouGov     B       3677
+5                                           Gravis Marketing    B-      16639
+6 Fox News/Anderson Robbins Research/Shaw &amp; Company Research     A       1295
+7                                    CBS News/New York Times    A-       1426
+8                               NBC News/Wall Street Journal    A-       1282
+  population rawpoll_clinton rawpoll_trump rawpoll_johnson rawpoll_mcmullin
+1         lv           47.00         43.00            4.00             2009
+2         lv           38.03         35.69            5.46             2009
+3         lv           42.00         39.00            6.00             2009
+4         lv           45.00         41.00            5.00             2009
+5         rv           47.00         43.00            3.00             2009
+6         lv           48.00         44.00            3.00             2009
+7         lv           45.00         41.00            5.00             2009
+8         lv           44.00         40.00            6.00             2009
+  adjpoll_clinton adjpoll_trump adjpoll_johnson adjpoll_mcmullin
+1        45.20163      41.72430        4.626221             2009
+2        43.34557      41.21439        5.175792             2009
+3        42.02638      38.81620        6.844734             2009
+4        45.65676      40.92004        6.069454             2009
+5        46.84089      42.33184        3.726098             2009
+6        49.02208      43.95631        3.057876             2009
+7        45.11649      40.92722        4.341786             2009
+8        43.58576      40.77325        5.365788             2009</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

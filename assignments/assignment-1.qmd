@@ -2,18 +2,60 @@
 title: "Assignment 1"
 ---
 
-# Assignment 1
+::: {style="text-align: left;"}
+[Assignment 1](assignments/emu660-assignment-1-2026spring.pdf){.btn style="background-color: #1B9679; border-color: #1B9679; color: white;" target="_blank" role="button"}
+:::
 
 My first assignment has two parts.
 
 ## Task 3
 
+### (a)
+
+video: <https://www.youtube.com/watch?v=Fi8-phj1X1A&t>
+
+Dr. Cem Vardar explains the relationship between data science and industrial engineering. He defines industrial engineering as a job that solves complex problems with science and mathematics. His approach to solve complex problems and optimizing the efficiency of a system is "don't touch if it works" principle. This principle solves the issues step by step, improving each time. According to Dr. Cem Vardar, this approach is way more succesful than creating a new complex tool for each problem. Dr. Cem categorizes the demand for people which deals with data:
+
+-   General Data Scientist/Analyst
+
+-   Predictive Modelling
+
+-   Machine Learning
+
+-   OR Data Scientist
+
+Dr. Cem Vardar also recommends that social and analytical skills are crucial for an engineer. In his speech, it is stated that these soft skills are as important as technical skills and it is always a plus for an engineer to utilize various skillsets.
+
+### (b)
+
+Q1) In his presentation, Dr. Cem Vardar mentions evolutionary design and the "if it works, don't touch it" principle when dealing with complex systems. If an engineer wants to improve a system that has problems but is still running (like a logistics network getting customer complaints), how should they approach it according to Dr. Cem Vardar? Also, what are the main risks of throwing everything and starting from scratch?
+
+Answer: According to Dr. Cem Vardar, an engineer should avoid throwing away a working system just to try and build a "perfect" one from zero. Even if the system has issues, it is still functioning. Instead, problem should be broken into small manageable parts and be solved spep by step using evolutionary approach. Main points should be identified and small modest improvements should be made in each step.
+
+Q2) When we consider Dr. Cem Vardar's analytical thinking methods, which is the best approacg for an industrial engineer with small amount of data?
+
+a)  Complex mathematical models and machine learning algorithms should be integrated to the system without thinking about small data.
+
+b)  Purchasing only high budget automation systems instead of using statistical models to fill gaps in databases.
+
+c)  Using logic and simple tools (like averages) that fit the problem better.
+
+d)  Doing nothing for years because you think you don't have enough data to solve the problem.
+
+e)  Mixing random data from different departments just to make your data look bigger.
+
+Anser: C
+
 ### (c)
 
+Package "dslabs" is installed.
+
 ```{r}
-install.packages("dslabs")
+#install.packages("dslabs")
 library(dslabs)
 ```
+
+Data "mtcars" is installed and checked with print function. mpg column of the dataset is now mpg object which is a vector of its own. compute stats function is defined and it finds the demanded values of the mpg.
 
 ```{r}
 data(mtcars)
@@ -39,6 +81,8 @@ compute_stats <- function(num_vector){
 compute_stats(mpg)
 ```
 
+using for loop with compute_stats to find the values for all of the columns in mtcars dataset.
+
 ```{r}
 for (i in names(mtcars)){
   print(i)
@@ -48,13 +92,13 @@ for (i in names(mtcars)){
 }
 ```
 
+Applying the same logic above but with "sapply" and "apply".
+
 ```{r}
 results1 <- sapply(mtcars, compute_stats)
 
 print(results1)
-```
 
-```{r}
 results2 <- apply(mtcars, 2, compute_stats)
 
 print(results2)
@@ -62,11 +106,15 @@ print(results2)
 
 ### (d)
 
+Dalling the data "polls_us_election_2026".
+
 ```{r}
 data(polls_us_election_2016)
 head(polls_us_election_2016)
 str(polls_us_election_2016)
 ```
+
+my_first and my_birth_year is defined and also k value is found. Dataset is trimmed according to k being odd or even.
 
 ```{r}
 my_first <- "Akif Bora"
@@ -80,6 +128,8 @@ if (k%%2 ==0) {
   trimmed_data <- tail(polls_us_election_2016, k)
 }
 ```
+
+Replacing NA values in the trimmed_data with the demanded element in the task.
 
 ```{r}
 #number of na values in the entire dataset
