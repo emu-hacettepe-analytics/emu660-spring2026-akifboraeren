@@ -9,63 +9,63 @@
   {
     "objectID": "project.html",
     "href": "project.html",
-    "title": "Project X",
+    "title": "Operational Performance and Traffic Analysis of Turkey’s National Aviation Network",
     "section": "",
-    "text": "Welcome to my/our project page.\nKeep an eye on this space to stay updated with my project activities.\n(The titles below are provided as examples; please feel free to adjust them as necessary.)"
+    "text": "This project aims to analyze the operational performance and passenger traffic trends across all civil airports in Turkey from 2018 to 2025. Instead of focusing only on a single city, this study will examine the entire national aviation network. The scope includes identifying growth patterns in different regions, analyzing the seasonality of tourism-based airports (such as Antalya and Dalaman), and measuring the efficiency of regional airports compared to major hubs like Istanbul (IST) and Ankara (ESB).\nObjectives:\n\nTo benchmark airport efficiency using “Passenger/Flight” ratios.\nTo analyze the seasonal sensitivity of regional vs. hub airports.\nTo visualize the geographical distribution of air traffic growth."
   },
   {
     "objectID": "project.html#data-source",
     "href": "project.html#data-source",
-    "title": "Project X",
+    "title": "Operational Performance and Traffic Analysis of Turkey’s National Aviation Network",
     "section": "2.1 Data Source",
-    "text": "2.1 Data Source\nxxxxxx"
+    "text": "2.1 Data Source\nThe dataset is retrieved from the official statistics of the General Directorate of State Airports Authority (DHMİ).\n\nReference: DHMİ Statistics dhmi.gov.tr/Pages/Statistics.aspx"
   },
   {
     "objectID": "project.html#general-information-about-data",
     "href": "project.html#general-information-about-data",
-    "title": "Project X",
+    "title": "Operational Performance and Traffic Analysis of Turkey’s National Aviation Network",
     "section": "2.2 General Information About Data",
-    "text": "2.2 General Information About Data\nxxxxxx"
+    "text": "2.2 General Information About Data\nThe dataset includes monthly and yearly reports for more than 50 airports. Key variables to be analyzed are:\n\nPassenger Numbers: Total counts for domestic and international flights.\nFlight Movements: The number of commercial and non-commercial aircraft taking off and landing.\nCargo and Freight: The volume of air cargo handled, which reflects the economic activity of the region. The data allows for a longitudinal study, covering the period before, during, and after the global pandemic."
   },
   {
     "objectID": "project.html#reason-of-choice",
     "href": "project.html#reason-of-choice",
-    "title": "Project X",
+    "title": "Operational Performance and Traffic Analysis of Turkey’s National Aviation Network",
     "section": "2.3 Reason of Choice",
-    "text": "2.3 Reason of Choice\nxxxxxx"
+    "text": "2.3 Reason of Choice\nAnalyzing the full national dataset is essential for a complete understanding of Turkey's logistics and transportation infrastructure. This choice allows for benchmarking (comparing different airports) to see which ones are operating at high efficiency and which ones have underutilized capacity. From an Industrial Engineering perspective, this wide-scale data enables the use of clustering techniques to group airports by their traffic behavior and forecasting models to predict future demand across different regions of Turkey."
   },
   {
     "objectID": "project.html#preprocessing",
     "href": "project.html#preprocessing",
-    "title": "Project X",
+    "title": "Operational Performance and Traffic Analysis of Turkey’s National Aviation Network",
     "section": "2.4 Preprocessing",
     "text": "2.4 Preprocessing\nxxxxxx"
   },
   {
     "objectID": "project.html#exploratory-data-analysis",
     "href": "project.html#exploratory-data-analysis",
-    "title": "Project X",
+    "title": "Operational Performance and Traffic Analysis of Turkey’s National Aviation Network",
     "section": "3.1 Exploratory Data Analysis",
     "text": "3.1 Exploratory Data Analysis\nxxxxxx"
   },
   {
     "objectID": "project.html#trend-analysis",
     "href": "project.html#trend-analysis",
-    "title": "Project X",
+    "title": "Operational Performance and Traffic Analysis of Turkey’s National Aviation Network",
     "section": "3.2 Trend Analysis",
     "text": "3.2 Trend Analysis\nxxxxxx"
   },
   {
     "objectID": "project.html#model-fitting",
     "href": "project.html#model-fitting",
-    "title": "Project X",
+    "title": "Operational Performance and Traffic Analysis of Turkey’s National Aviation Network",
     "section": "3.3 Model Fitting",
     "text": "3.3 Model Fitting\nxxxxxx"
   },
   {
     "objectID": "project.html#results",
     "href": "project.html#results",
-    "title": "Project X",
+    "title": "Operational Performance and Traffic Analysis of Turkey’s National Aviation Network",
     "section": "3.4 Results",
     "text": "3.4 Results\nxxxxxx"
   },

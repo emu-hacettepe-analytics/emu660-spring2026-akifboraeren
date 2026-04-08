@@ -1,32 +1,40 @@
 ---
-title: "Project X"
+title: "Operational Performance and Traffic Analysis of Turkey’s National Aviation Network"
 ---
-
-Welcome to my/our project page.
-
-Keep an eye on this space to stay updated with my project activities.
-
-(The titles below are provided as examples; please feel free to adjust them as necessary.)
 
 # 1. Project Overview and Scope
 
-xxxxxx
+This project aims to analyze the operational performance and passenger traffic trends across all civil airports in Turkey from 2018 to 2025. Instead of focusing only on a single city, this study will examine the entire national aviation network. The scope includes identifying growth patterns in different regions, analyzing the seasonality of tourism-based airports (such as Antalya and Dalaman), and measuring the efficiency of regional airports compared to major hubs like Istanbul (IST) and Ankara (ESB).
+
+**Objectives:**
+
+-   To benchmark airport efficiency using "Passenger/Flight" ratios.
+
+-   To analyze the seasonal sensitivity of regional vs. hub airports.
+
+-   To visualize the geographical distribution of air traffic growth.
 
 # 2. Data
 
-xxxxxx
-
 ## 2.1 Data Source
 
-xxxxxx
+The dataset is retrieved from the official statistics of the **General Directorate of State Airports Authority (DHMİ)**.
+
+-   *Reference:* DHMİ Statistics [dhmi.gov.tr/Pages/Statistics.aspx](https://www.dhmi.gov.tr/Sayfalar/Istatistikler.aspx)
 
 ## 2.2 General Information About Data
 
-xxxxxx
+The dataset includes monthly and yearly reports for more than 50 airports. Key variables to be analyzed are:
+
+-   Passenger Numbers: Total counts for domestic and international flights.
+
+-   Flight Movements: The number of commercial and non-commercial aircraft taking off and landing.
+
+-   Cargo and Freight: The volume of air cargo handled, which reflects the economic activity of the region. The data allows for a longitudinal study, covering the period before, during, and after the global pandemic.
 
 ## 2.3 Reason of Choice
 
-xxxxxx
+Analyzing the full national dataset is essential for a complete understanding of Turkey\'s logistics and transportation infrastructure. This choice allows for benchmarking (comparing different airports) to see which ones are operating at high efficiency and which ones have underutilized capacity. From an Industrial Engineering perspective, this wide-scale data enables the use of clustering techniques to group airports by their traffic behavior and forecasting models to predict future demand across different regions of Turkey.
 
 ## 2.4 Preprocessing
 
